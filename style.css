@@ -1,0 +1,414 @@
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+@font-face {
+    font-family: Haettenschweiler;
+    src: url('font/Haettenschweiler.ttf');
+}
+
+/*초기화코드*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+img {
+    border: 0;
+    vertical-align: top;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+ul {
+    list-style: none;
+}
+
+.clear_fix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#header {
+    background-color: #000;
+    position: fixed;
+    width: 100%;
+    height: 57px;
+    z-index: 1000;
+}
+
+#header .nav {
+    width: 1200px;
+    height: 30px;
+    margin: 0 auto;
+    padding: 10px 0;
+
+}
+
+#header .nav .logo {
+    display: inline-block;
+    float: left;
+}
+
+#header .nav img {
+    width: 120px;
+    margin: 5px 0;
+}
+
+#header .nav a {
+    float: right;
+    margin: 5px 0;
+}
+
+#header .nav a span {
+    margin-left: 10px;
+}
+
+#header a {
+    color: #fff;
+}
+
+#section .main_banner {
+    background-image: url(images/image_01.jpg);
+    height: 600px;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+    top: 57px;
+    margin-bottom: 100px;
+}
+
+#section .main_banner .b_title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -154px;
+    color: #fff;
+    text-align: center;
+}
+
+.btn:hover {
+    font-weight: bold;
+}
+
+#section .main_banner .b_title .btn {
+    width: 120px;
+    height: 50px;
+    background-color: #000;
+    font-size: 14px;
+    line-height: 50px;
+    position: absolute;
+    left: 50%;
+    margin-left: -60px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+#section .collection {
+    position: relative;
+}
+
+#section .collection .wrap {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+#section .collection .small_banner {
+    margin-bottom: 50px;
+}
+
+#section .collection .small_banner div {
+    float: left;
+
+}
+
+#section .collection .small_banner .s_img {
+    width: 630px;
+    height: 350px;
+    background-color: aqua;
+    overflow: hidden;
+}
+
+#section .collection .small_banner .s_img span {
+    transition: transform 0.7s;
+}
+
+#section .collection .small_banner .s_img:hover span {
+    transform: scale(1.1);
+}
+
+#section .collection .small_banner:nth-child(1) .s_img span {
+    background-image: url(images/image_04.jpg);
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    background-color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+#section .collection .small_banner:nth-child(2) .s_img span {
+    background-image: url(images/image_08.jpg);
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    background-color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+#section .collection .small_banner .s_text {
+    width: 560px;
+    height: 350px;
+    background-color: #9d1311;
+    color: #fff;
+}
+
+#section .collection .small_banner .s_text h3 {
+    margin-bottom: 10px;
+}
+
+#section .collection .small_banner .s_text .text {
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+#section .collection .small_banner .s_text .btn {
+    width: 120px;
+    height: 50px;
+    background-color: #000;
+    font-size: 14px;
+    line-height: 50px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 30px;
+}
+
+#section .product {
+    background-color: #000;
+    color: #fff;
+    padding-bottom: 50px;
+}
+
+#section .product .wrap {
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#section .product .p_title {
+    padding: 50px 0;
+}
+
+#section .product .product_list div {
+    width: 289px;
+    height: 200px;
+    float: left;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#section .product .product_list .p1,
+#section .product .product_list .p2,
+#section .product .product_list .p3,
+#section .product .product_list .p4,
+#section .product .product_list .p5,
+#section .product .product_list .p6,
+#section .product .product_list .p7,
+#section .product .product_list .p8 {
+    position: relative;
+}
+
+#section .product .product_list .p1:hover .p_hover,
+#section .product .product_list .p2:hover .p_hover,
+#section .product .product_list .p3:hover .p_hover,
+#section .product .product_list .p4:hover .p_hover,
+#section .product .product_list .p5:hover .p_hover,
+#section .product .product_list .p6:hover .p_hover,
+#section .product .product_list .p7:hover .p_hover,
+#section .product .product_list .p8:hover .p_hover {
+    opacity: 1;
+}
+
+#section .product .product_list .p_hover {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 289px;
+    height: 200px;
+    margin-left: -144px;
+    margin-top: -100px;
+    background-color: rgba(0, 0, 0, 0.65);
+    line-height: 200px;
+    opacity: 0;
+    transition: opacity 0.7s;
+    font-weight: bold;
+}
+
+#section .product .p_button {
+    padding: 50px 0;
+    position: relative;
+
+}
+
+#section .product .p_button .btn {
+    width: 120px;
+    height: 50px;
+    background-color: #fff;
+    font-size: 14px;
+    line-height: 50px;
+    cursor: pointer;
+    text-align: center;
+    color: #000;
+    position: absolute;
+    left: 50%;
+    margin-left: -60px;
+}
+
+#section .mani {
+    background-image: url(images/image_30.jpg);
+    height: 650px;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    position: relative;
+}
+
+#section .mani .m_text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -106px;
+}
+
+#section .mani .btn {
+    width: 120px;
+    height: 50px;
+    background-color: #000;
+    font-size: 14px;
+    line-height: 50px;
+    cursor: pointer;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    margin-left: -60px;
+    margin-top: 20px;
+
+}
+
+#footer {
+    padding: 30px 0;
+    background-color: #9d1311;
+    color: #c9c0b5;
+    text-align: center;
+    line-height: 20px;
+}
+
+#footer h3 {
+    margin-bottom: 15px;
+}
+
+#footer p {
+    font-size: 14px;
+}
+
+
+
+/* tablet size */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    #header .nav {
+        width: 85%;
+    }
+
+   #section .collection {
+        width: 100%;
+    }
+
+    #section .collection .wrap {
+        width: 100%;
+        margin: 0;
+    }
+    
+    #section .collection .small_banner .s_text {
+        width: 50%;
+    }
+
+    #section .collection .small_banner .s_img {
+        width: 50%;
+    }
+
+    #section .product .p_title,
+    #section .product .p_button {
+        width: 100%;
+    }
+
+    #section .product .wrap {
+        width: 100%;
+    }
+
+    #section .product .product_list div {
+        width: 25%;
+    }
+}
+
+
+/* mobile size */
+@media screen and (max-width: 768px) {
+    #header .nav {
+        width: 85%;
+    }
+
+    #section .main_banner {
+        background-image: url(images/image_01_mobile.jpg);
+        margin-bottom: 10px;
+    }
+
+    #section .collection {
+        width: 100%;
+    }
+
+    #section .collection .wrap {
+        width: 100%;
+        padding: 0;
+        padding-top: 100px;
+        margin: 0;
+    }
+
+    #section .collection .small_banner div {
+        max-width: 768px;
+    }
+
+    #section .collection .small_banner .s_text {
+        width: 100%;
+    }
+
+    #section .collection .small_banner .s_img {
+        width: 100%;
+    }
+
+    #section .product .p_title,
+    #section .product .p_button {
+        width: 100%;
+    }
+
+    #section .product .product_list {
+        width: 100%;
+    }
+
+    #section .product .wrap {
+        width: 100%;
+    }
+
+    #section .product .product_list div {
+        width: 100%;
+    }
+}
